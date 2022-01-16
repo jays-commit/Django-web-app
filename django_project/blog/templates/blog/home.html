@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    {%if title%}
+        <title>Django Blog - {{title}}</title>
+    {%else%}
+        <title>Django Blog </title>
+    {%endif %}
+
 </head>
 <body>
         <h1>Blog Home!</h1>
-
         {% for post in posts%}
         <h1>{{post.title}}</h1>
         <p>{{post.content}}</p>

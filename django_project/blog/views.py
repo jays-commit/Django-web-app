@@ -8,9 +8,9 @@ posts = \
         "date_posted": "16th Jan 2022",
     },
         {
-            "title": "Django features ",
+            "title": "Django Features ",
             "author": "Jane Archaic",
-            "content": "Tutorial 2",
+            "content": "Features 1",
             "date_posted": "17th Jan 2022",
         }
 

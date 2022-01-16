@@ -2,15 +2,15 @@ from django.shortcuts import render
 
 posts = \
     [{
-        "title": "Django Tutorial ",
+        "title": "Blog Post 1 ",
         "author": "Corey Schafer",
-        "content": "Tutorial 1",
+        "content": "First post content",
         "date_posted": "16th Jan 2022",
     },
         {
-            "title": "Django Features ",
+            "title": "Blog Post 2 ",
             "author": "Jane Archaic",
-            "content": "Features 1",
+            "content": "Second post content",
             "date_posted": "17th Jan 2022",
         }
 

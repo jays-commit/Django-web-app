@@ -1,21 +1,22 @@
 from django.shortcuts import render
 from .models import Post
 
-posts = \
-    [{
-        "title": "Blog Post 1 ",
-        "author": "Corey Schafer",
-        "content": "First post content",
-        "date_posted": "16th Jan 2022",
-    },
-        {
-            "title": "Blog Post 2 ",
-            "author": "Jane Archaic",
-            "content": "Second post content",
-            "date_posted": "17th Jan 2022",
-        }
 
-    ]
+# Dummy data used before database was set up
+# posts = \
+#     [{
+#         "title": "Blog Post 1 ",
+#         "author": "Corey Schafer",
+#         "content": "First post content",
+#         "date_posted": "16th Jan 2022",
+#     },
+#         {
+#             "title": "Blog Post 2 ",
+#             "author": "Jane Archaic",
+#             "content": "Second post content",
+#             "date_posted": "17th Jan 2022",
+#         }]
+
 
 
 def home(request):

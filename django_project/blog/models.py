@@ -10,3 +10,6 @@ class Post(models.Model):
     content = models.TextField()  # text field is for paragraphs and unrestricted length of text
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title

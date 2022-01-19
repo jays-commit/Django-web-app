@@ -1,10 +1,28 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Post
+
+
+# Dummy data used before database was set up
+# posts = \
+#     [{
+#         "title": "Blog Post 1 ",
+#         "author": "Corey Schafer",
+#         "content": "First post content",
+#         "date_posted": "16th Jan 2022",
+#     },
+#         {
+#             "title": "Blog Post 2 ",
+#             "author": "Jane Archaic",
+#             "content": "Second post content",
+#             "date_posted": "17th Jan 2022",
+#         }]
+
 
 
 def home(request):
-    return HttpResponse("<h1>Blog Home</h1>")
+    context = {"posts": Post.objects.all()}
+    return render(request, "blog/home.html", context)
 
 
 def about(request):
-    return HttpResponse("<h1>About</h1>")
+    return render(request, "blog/about.html", {"title": "About"})

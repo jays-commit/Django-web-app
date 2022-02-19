@@ -39,7 +39,7 @@ class PostDetailView(DetailView):
     model = Post
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
     fields = ['title', 'content']
 
@@ -48,7 +48,8 @@ class PostCreateView(CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(CreateView):
+# Update view optional might follow the twitter model of no editing
+class PostUpdateView(LoginRequiredMixin, UpdateView):
     model = Post
     fields = ['title', 'content']
 

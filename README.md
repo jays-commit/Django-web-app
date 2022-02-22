@@ -1,2 +1,3 @@
 # Django-web-app
-Full featured web application using Django &amp; Python
+Full featured blog/diary web application using Django &amp; Python
+
